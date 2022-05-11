@@ -1,0 +1,24 @@
+{
+  "name": "zzyc-supply/download-zip",
+  "description": "Zzyc supply download-zip SDK for PHP",
+  "type": "library",
+  "keywords": ["supply", "zzyc", "sdk", "download-zip"],
+  "require": {
+    "php": ">=7.0"
+  },
+  "homepage": "http://www.xzwl1688.com/",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "huidaoli",
+      "email": "1069945237@qq.com",
+      "homepage": "http://www.xzwl1688.com/"
+    }
+  ],
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "Zzyc\\Zip\\dowimg\\": "src/Zzyc/Zip/dowimg"
+    }
+  }
+}
