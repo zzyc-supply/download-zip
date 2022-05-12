@@ -18,7 +18,14 @@ $ composer require zzyc-supply/download-zip
 
 ```php    
 
-	require_once("zipTool.php");
+	/**
+     * Created by PhpStorm.
+     * User: Zzyc
+     * Date: 2022/4/17
+     * Time: 2:04 PM
+     */
+    
+    use Zzyc\Zip\zipTool;
 
     /**
      * 为图像添加图片水印

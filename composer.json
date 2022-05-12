@@ -18,7 +18,7 @@
   "minimum-stability": "stable",
   "autoload": {
     "psr-4": {
-      "Zzyc\\Zip\\dowimg\\": "src/Zzyc/Zip/dowimg"
+      "Zzyc\\Zip\\": "src/Zzyc/Zip"
     }
   }
 }

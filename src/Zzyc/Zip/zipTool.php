@@ -6,6 +6,8 @@
  * Time: 13:16
  */
 
+namespace Zzyc\Zip;
+
 class zipTool{
     //路径
     protected  $path;
@@ -352,13 +354,13 @@ class zipTool{
             unlink($file_name);
         }
         //重新生成文件
-        $zip = new ZipArchive();
-        if ($zip->open($file_name, ZIPARCHIVE::CREATE) !== TRUE) {
+        $zip = new \ZipArchive();
+        if ($zip->open($file_name, \ZIPARCHIVE::CREATE) !== TRUE) {
             exit('无法打开文件，或者文件创建失败');
         }
         foreach ($file_list as $val) {
             if (file_exists($val)) {
-                $zip->addFile($val);
+                $zip->addFile($val,basename($val));
             }
         }
         $zip->close();//关闭
