@@ -37,9 +37,9 @@ $ composer require zzyc-supply/download-zip
      * @param 参数5 增加完水印的图片的前缀
      * @param 参数6 是否保存图片（0-》保存，1-》浏览器输出）
      */
-    $imgTool1 = new zipTool('water/');
-    $image1 = './imgs/123456.jpg';
-    $waterImg = './imgs/water.png';
+    $imgTool1 = new zipTool('examples/water/');
+    $image1 = '/examples/imgs/123456.jpg';
+    $waterImg = '/examples/imgs/water.png';
 	echo $imgTool1->addWater($image1,$waterImg,0,100,'water_',0);
 
 ```    

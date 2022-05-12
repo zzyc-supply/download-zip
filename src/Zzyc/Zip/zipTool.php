@@ -296,12 +296,15 @@ class zipTool{
      * @param $filename 文件名称
      * @param $type 获取远程文件所采用的方法 0为curl
      */
-    public function downLoadImg($url,$save_dir='',$filename='',$type=0){
+    public function downLoadImg($url,$save_dir='',$filename='',$type=0)
+    {
+        $root_path = './examples/商品数据包';
+
         if(trim($url)==''){
             return array('file_name'=>'','save_path'=>'','error'=>1);
         }
         if(trim($save_dir)==''){
-            $save_dir='./商品数据包';
+            $save_dir=$root_path;
         }
         if(trim($filename)==''){//保存文件名
             $ext=strrchr($url,'.');

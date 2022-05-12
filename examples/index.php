@@ -23,7 +23,7 @@
     $imgTool1 = new zipTool('examples/water/');
     $image1 = './examples/imgs/123456.jpg';
     $waterImg = './examples/imgs/water.png';
-	//echo $imgTool1->addWater($image1,$waterImg,0,100,'water_',0);
+	$imgTool1->addWater($image1,$waterImg,0,100,'water_',0);
 
 	/**
      * 为图像添加文字标记
@@ -38,7 +38,7 @@
      */
 	$imgTool2 = new zipTool('examples/textmark/');
 	$image2 = './examples/imgs/123456.jpg';
-	//echo $imgTool2->addTextmark($image2,"新泽网络",30, dirname(__FILE__).".\imgs\msyh.ttf",100,110,0);
+	$imgTool2->addTextmark($image2,"文字水印",30, dirname(__FILE__).".\imgs\msyh.ttf",100,110,0);
 
 	/**
 	 *  图片压缩
@@ -49,7 +49,7 @@
      */
 	$imgTool3 = new zipTool('examples/compressimg/');
 	$image3 = './examples/imgs/123456.jpg';
-	//echo $imgTool3->compressImg($image3,20,0);
+	$imgTool3->compressImg($image3,20,0);
 
 	/**
      * 远程图片下载工具
@@ -112,4 +112,4 @@
     sleep(1);
     $imgTool4->makeZip($file_name,$file_list);
     sleep(1);
-    //$imgTool4->download($file_name);
+    //$imgTool4->download($file_name);//下载zip文件，也可返回拼接地址【'www.ym.com'.$file_name】给前端，用户打开链接下载zip文件
