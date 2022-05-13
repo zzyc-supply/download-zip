@@ -321,7 +321,7 @@ class zipTool{
             return array('file_name'=>'','save_path'=>'','error'=>5);
         }
         //获取远程文件所采用的方法
-        if($type){
+        if($type==0){
             $ch=curl_init();
             $timeout=300;
             curl_setopt($ch,CURLOPT_URL,$url);

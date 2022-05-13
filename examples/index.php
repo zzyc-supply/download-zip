@@ -80,7 +80,11 @@
     }
 
     //下载详情图
-    $details = '<p><img src="http://cbu01.alicdn.com/img/ibank/O1CN01Ubgfwh1xo0kyXBdaP_!!2239856489-0-cib.jpg"/><img src="//cbu01.alicdn.com/img/ibank/2018/439/031/9143130934_1306809027.jpg"/><img src="//cbu01.alicdn.com/img/ibank/2018/576/631/9143136675_1306809027.jpg"/><img src="https://cbu01.alicdn.com/img/ibank/2018/151/361/9143163151_1306809027.jpg"/><img src="//cbu01.alicdn.com/img/ibank/2018/384/508/9184805483_1306809027.jpg"/></p>';
+    //$details = '<p><img src="http://cbu01.alicdn.com/img/ibank/O1CN01Ubgfwh1xo0kyXBdaP_!!2239856489-0-cib.jpg"/><img src="//cbu01.alicdn.com/img/ibank/2018/439/031/9143130934_1306809027.jpg"/><img src="//cbu01.alicdn.com/img/ibank/2018/576/631/9143136675_1306809027.jpg"/><img src="https://cbu01.alicdn.com/img/ibank/2018/151/361/9143163151_1306809027.jpg"/><img src="//cbu01.alicdn.com/img/ibank/2018/384/508/9184805483_1306809027.jpg"/></p>';
+
+    $details = '<p>
+    <img src="//cbu01.alicdn.com/img/ibank/2020/131/955/14819559131_221352713.jpg"/><img src="//cbu01.alicdn.com/img/ibank/2020/703/542/14861245307_221352713.jpg"/><img src="//cbu01.alicdn.com/img/ibank/2020/908/108/14915801809_221352713.jpg"/><img src="//cbu01.alicdn.com/img/ibank/2020/235/145/14819541532_221352713.jpg"/><img src="//cbu01.alicdn.com/img/ibank/2020/073/932/14861239370_221352713.jpg"/><img src="//cbu01.alicdn.com/img/ibank/2020/407/408/14915804704_221352713.jpg"/><img src="//cbu01.alicdn.com/img/ibank/2020/063/242/14861242360_221352713.jpg"/><img src="//cbu01.alicdn.com/img/ibank/2020/607/835/14819538706_221352713.jpg"/><img src="//cbu01.alicdn.com/img/ibank/2020/077/535/14819535770_221352713.jpg"/><img src="//cbu01.alicdn.com/img/ibank/2020/032/452/14861254230_221352713.jpg"/><img src="//cbu01.alicdn.com/img/ibank/2020/599/235/14819532995_221352713.jpg"/><img src="//cbu01.alicdn.com/img/ibank/2020/688/422/14861224886_221352713.jpg"/><img src="//cbu01.alicdn.com/img/ibank/2020/635/842/14861248536_221352713.jpg"/>
+</p>';
 
 	if (preg_match('/(http:)|(https:)/i', $details)) {
 	    $details = preg_replace('/(http:)|(https:)/i', '', $details);
